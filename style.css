@@ -766,6 +766,87 @@ span.material-symbols-outlined{
 }
 
 
+/* MEMBROS  ---------------------------------------------------------------------*/
+
+#membros {
+    height: 100%;
+    width: 100%;
+    padding: 7rem 2rem;
+}
+.membros-textos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+
+}
+.membros-textos h1 {
+    color: #00162f;
+    font-size: 3rem;
+    letter-spacing: -2px;
+    line-height: 50px;
+}
+.membros-textos h2 {
+    color: #00162f;
+    font-weight: 300;
+    font-family: 'Unbounded';
+    margin-top: 10px;
+    
+}
+.membros-container {
+    border-radius: 3rem;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.membros-container .membros-item2,
+.membros-container .membros-item1 {
+    width: 100%;
+    height: 280px;
+    background-color: #153962;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.membros-container .membros-item1 {
+    background-color: #00162f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.membros-item1 img,
+.membros-item2 img {
+    height: 80px;
+}
+.membros-item2 h1,
+.membros-item1 h1{
+    color: #d8d7d7;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Unbounded';
+    line-height: 20px ;
+    margin-top: 15px;
+}
+.borda {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.borda1 {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
 /* FOOTER  ---------------------------------------------------------------------*/
 
 #footer {
