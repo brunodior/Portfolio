@@ -571,12 +571,13 @@ span.material-symbols-outlined{
     padding: 3rem 0;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+
 }
 
 .inicio-anuncio img {
     width: 100%;
     height: auto;
-    margin-left: -20px;
+    margin-left: 0px;
 }
 
 .inicio-anuncio .inicio-contatos {
@@ -586,43 +587,91 @@ span.material-symbols-outlined{
     margin-left: 0px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
 .inicio-contatos h3 {
-    color: #00162f;
-    font-weight: 600;
     font-size: 1.5rem;
 }
 .inicio-contatos h1 {
-    color: #00162f;
-    font-weight: 800;
     font-size: 2.3rem;
-    line-height: 30px;
-    letter-spacing: -2px;
-    
+    line-height: 30px;  
 }
 .inicio-contatos a {
     text-decoration: none;
     padding: 10px 20px;
-    color: #00162f;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: all ease 0.3s;
-    font-size: 25px;
-    margin-top: 20px;
-    text-align: center;
-    justify-content: center;
-    width: 90%;
-    display: flex;
-
-
+    font-size: 20px;
+    width: 80%;
 }
 
 
 
 
+/* MISSAO  ---------------------------------------------------------------------*/
 
+#missao {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+.missao-conteudo {
+    width: 85%;
+    height: 75%;
+    background-color: #edae23;
+    border-radius: 2rem;
+    background-image: url('img/fundo.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    flex-direction: column;
+}
+.missao-conteudo h1 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 50px;
+    text-align: center;
+}
+.missao-texto {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    text-align: center;
+}
+.missao-texto h3 {
+    color: #00162f;
+    font-weight: 400;
+    font-family: 'Unbounded';
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+.missao-texto h3 span {
+    font-family: 'Unbounded';
+    font-weight: 800;
+}
+.spas img,
+.spas1 img {
+    width: 40px;
+}
+.missao-texto .spas1,
+.missao-texto .spas {
+    height: 100%;
+
+
+
+}
+
+.missao-texto .spas1 {
+    display: flex;
+    align-items: end;
+}
 
 
 
