@@ -538,10 +538,28 @@ span.material-symbols-outlined{
 
 
 
+@media (max-width: 1500px){
+    .inicio-anuncio img {
+        height: 100%;
+        margin-left: -190px;
+    }
+
+    .missao-texto {
+        height: 100%;
+        padding: 0;
+    }
+    .quemSomos-textos {
+        padding: 0 1rem;
+
+    }
+    .missao-conteudo {
+        padding: 1rem 3rem;
+    }
+
+}
 
 
-
-@media (max-width: 700px){ 
+@media (max-width: 1200px){ 
 
 
     header {
