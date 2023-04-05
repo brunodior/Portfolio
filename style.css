@@ -250,18 +250,22 @@ span.material-symbols-outlined{
 }
 .quemSomos-textos {
     padding: 0 4rem;
+    font-family: 'Unbounded';
 }
 #quemSomos .quemSomos-textos h1 {
     color: #edae23;
     font-size: 3rem;
     margin-bottom: 10px;
     letter-spacing: -2px;
+    font-family: 'Unbounded';
+
 }
 
 #quemSomos .quemSomos-textos h2 {
     color: #153962;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 300;
+    font-family: 'Unbounded';
 }
 
 
@@ -664,21 +668,101 @@ span.material-symbols-outlined{
 .missao-texto .spas {
     height: 100%;
 
-
-
 }
+/* QUEM SOMOS?  ---------------------------------------------------------------------*/
 
-.missao-texto .spas1 {
+
+#quemSomos {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem;
     display: flex;
-    align-items: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quemSomos img {
+    height: auto;
+    width: 80%;
+    
+}
+.quemSomos-textos {
+    padding: 0 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+#quemSomos .quemSomos-textos h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+
+#quemSomos .quemSomos-textos h2 {
+
+    font-size: 1.2rem;
+
 }
 
 
 
+/* SERVICOS  ---------------------------------------------------------------------*/
 
+#servicos {
+    width: 100%;
+    height: 100%;
+    background-color: #153962;
+    border-radius: 3rem;
+    background-image: url('img/fundo-servicos.png');
+    background-size: cover;
+    background-position: center;
+    padding: 3.5rem 0;
 
+}
 
-
+.servicos-textos {
+    width: 100%;
+    padding: 1rem 6rem;
+    text-align: center;
     
+}
+.servicos-textos h1 {
+    color: #edae23;
+    font-size: 3rem;
+    letter-spacing: -2px;
+    line-height: 50px;
+}
+.servicos-container {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.servicos-item {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.servicos-item:hover { 
+    border-bottom: solid 15px #b57c02;
+    background-color: #00162f;
+}
+
+.servicos-item img {
+    width: 100px;
+}
+.servicos-item h1 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: #edae23;
+}
+.servicos-item h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d8d7d7;
+}
 
 }
