@@ -31,6 +31,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
 }
 header img {
     height: 40px;
@@ -53,6 +58,7 @@ header .material-symbols-outlined:hover {
 /* INICIO  ---------------------------------------------------------------------*/
 
 #inicio {
+    margin-top: 100px;
     width: 100%;
     height: 60vh;
     background-color: #57c0e0;
@@ -76,5 +82,35 @@ header .material-symbols-outlined:hover {
 #post {
     width: 100%;
     height: 100vh;
-    background-color: #fafafa;
+    display: flex;
+}
+.post-left {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    padding: 5rem 3rem;
+
+    flex-direction: column;
+
+
+}
+.post-right {
+    width: 30vw;
+    height: 100%;
+    background-color: red;
+}
+
+.post-item {
+    width: 100%;
+    height: 300px;
+    background-color: #05001c;
+    border-radius: 2rem;
+}
+.post-cabecalho {
+    margin-bottom: 30px;
+}
+.post-cabecalho h1 {
+    color: #05001c;
+    font-size: 4rem;
+    font-weight: 800;
 }
