@@ -24,10 +24,10 @@
                 <nav>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#quemSomos">Sobre mim</a></li>
-                        <li><a href="#servicos">Habilidade</a></li>
-                        <li><a href="#membros">Hobbies</a></li>
-                        <li><a href="#membros">Portifolio</a></li>
+                        <li><a href="#sobreMim">Sobre mim</a></li>
+                        <li><a href="#habilidade">Habilidade</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#portifolio">Portifolio</a></li>
                         <li><a href="#membros">Contato</a></li>
                     </ul>
                 </nav>
@@ -50,14 +50,14 @@
             <h3>DESENVOLVEDOR WEB</h3>
             <a>Entre em contato!</a>
         </div>
-        <img src="imgPerfil/fotoInicio.png" alt="">
+        <img src="imgPerfil/fotoInicio.png" alt="" class="inicio-img">
     </section>
     <section id="include">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/p3R47BGGUu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h1>Porque </br>devo </br><span>entrar</span> na </br><span>Include?</span></h1>
+        <iframe width="560" class="video" height="315" src="https://www.youtube.com/embed/p3R47BGGUu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1 class="include-texto">Porque </br>devo </br><span>entrar</span> na </br><span>Include?</span></h1>
     </section>
     <section id="sobreMim">
-        <img src="imgPerfil/fotoSobreMim.png" alt="foto">
+        <img src="imgPerfil/fotoSobreMim.png" alt="foto" class="sobreMim-img">
         <div class="sobreMim-texto">
             <h1>Sobre mim</h1>
             <h3>Lorem Ipsum is simply dummy text of the printing 
@@ -115,6 +115,25 @@
 
         
     </section>
+    <section id="hobbies">
+        <div class="hobbies-textos">
+            <h1>Hobbies</h1>
+        </div>
+        <div class="hobbies-container">
+            <div class="hobbies-item">
+                <img src="imgPerfil/viajar.png" alt="icone"/>
+                <h1>Amo viajar</h1>
+            </div>
+            <div class="hobbies-item">
+                <img src="imgPerfil/got.png" alt="icone"/>
+                <h1> Assistit GOT</h1>
+            </div>
+            <div class="hobbies-item">
+                <img src="imgPerfil/amigos.png" alt="icone"/>
+                <h1>Sair com os amigos</h1>
+            </div>
+        </div>
+    </section>
     <section id="portifolio">
         <div class="portifolio-titulo">
             <h1>Portifólio</h1>
@@ -134,10 +153,10 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio2.png" alt="">
-                <h1>Clone da Netflix</h1>
-                <h3>Clone da Netflix feito para estudos e 
-                    aprimoramento de habilidades.
-                    Criado em React JS</h3>
+                <h1>Clima Agora!</h1>
+                <h3>Api do tempo real, feito para estudos e
+                    aprimoramento de habilidade. Criado com HTML/CSS e JavaScript.
+                </h3>
                 <div class="portifolioLink">
                     <a href="" class="acessarProjeto">Acessar Projeto</a>
                     <a href="https://github.com/brunnoaraujo0"><div class="portifolio-git"><img src="imgPerfil/git.png"/></div></a>
@@ -146,8 +165,8 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio3.png" alt="">
-                <h1>Clone da Netflix</h1>
-                <h3>Clone da Netflix feito para estudos e 
+                <h1>Calculadora IMC</h1>
+                <h3>Calculadora IMC feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
                 <div class="portifolioLink">
@@ -158,9 +177,9 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio4.png" alt="">
-                <h1>Clone da Netflix</h1>
-                <h3>Clone da Netflix feito para estudos e 
-                    aprimoramento de habilidades.
+                <h1>Miaudota</h1>
+                <h3>Site Miaudota feito para o Processo Seletivo
+                    da Empresa Junior Eject de habilidades.
                     Criado em React JS</h3>
                 <div class="portifolioLink">
                     <a href="" class="acessarProjeto">Acessar Projeto</a>
@@ -170,7 +189,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio5.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>Jogo da Velha</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
@@ -182,7 +201,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio6.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>Loucos por Pastel</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
@@ -194,7 +213,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio7.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>Carvalho Advocacia</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
@@ -206,7 +225,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio8.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>KnowMe</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
@@ -218,7 +237,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio9.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>Bateria</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
@@ -230,7 +249,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio10.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>Jogo da Memória</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
@@ -242,7 +261,7 @@
             </div>
             <div class="portifolio-item">
                 <img src="imgPerfil/portifolio11.png" alt="">
-                <h1>Clone da Netflix</h1>
+                <h1>Arrasta e Solta</h1>
                 <h3>Clone da Netflix feito para estudos e 
                     aprimoramento de habilidades.
                     Criado em React JS</h3>
