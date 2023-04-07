@@ -23,8 +23,11 @@ body::-webkit-scrollbar {
     border: 3px solid #57c0e0; 
   }
 
+
+/* HEADER  ---------------------------------------------------------------------*/
+
 header {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: #319cbd;
     padding: 0 5rem;
@@ -81,7 +84,7 @@ header .material-symbols-outlined:hover {
 
 #post {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
 }
 .post-left {
@@ -89,22 +92,23 @@ header .material-symbols-outlined:hover {
     height: 100%;
     display: flex;
     padding: 5rem 3rem;
-
     flex-direction: column;
 
 
 }
 .post-right {
     width: 30vw;
-    height: 100%;
-    background-color: red;
+    height: 100vh;
+    padding: 5rem 1rem;
 }
 
 .post-item {
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: #05001c;
     border-radius: 2rem;
+    padding: 3rem;
+    margin-top: 50px;
 }
 .post-cabecalho {
     margin-bottom: 30px;
@@ -114,3 +118,200 @@ header .material-symbols-outlined:hover {
     font-size: 4rem;
     font-weight: 800;
 }
+
+.post-item h1 {
+    color: #57c0e0;
+    font-size: 2rem;
+    letter-spacing: -2px;
+}
+.post-item h3 {
+    color: #fafafa;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.post-item h2 {
+    color: #57c0e0;
+    font-size: 1rem;
+    width: auto;
+    margin-top: 30px;
+}
+.post-item img {
+    width: 60px;
+}
+
+.post-right .doPost {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #57c0e0;
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+.doPost textarea,
+.doPost input {
+    background-color: #319cbd;
+    border-radius: 0.8rem;
+    height: 40px;
+    border: 0;
+    color: #fafafa;
+    margin-top: 20px;
+    padding:1rem;
+}
+textarea::placeholder,
+input::placeholder {
+    color: #fafafa;
+  }
+
+.doPost h1 {
+    color: #fafafa;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    margin: auto;
+}
+.doPost button {
+    color: #fafafa;
+    background-color: #57c0e0;
+    border: 3px solid #fafafa;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    margin-top: 30px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    
+}
+.doPost button:hover {
+    background-color: #fafafa;
+    color: #319cbd;
+}
+
+/* FOOTER  ---------------------------------------------------------------------*/
+
+#footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #57c0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-redeSociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 2rem;
+
+}
+.footer-redesSociais-item {
+    background-color: #05001c;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    margin-left: 20px;
+   
+}
+.footer-redesSociais-item:hover {
+ background-color: #fafafa;
+}
+.footer-redeSociais .footer-img {
+    width: 150px;
+}
+
+.footer-redesSociais-item img {
+    width: 100%; 
+}
+.footer-rodape {
+    width: 80%;
+}
+
+
+/* MENU-HAMBURGUER  ---------------------------------------------------------------------*/
+
+@keyframes scale-in {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 300px;
+    }}
+
+.menu-hamburguer {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fafafa;
+    right: 0;
+    display: none;
+    animation-name: scale-in;
+    animation-duration: 0.3s;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.menu-hamburguer a {
+    font-size: 1.4rem;
+    color: #00162f;
+    font-weight: 400;
+    font-family: 'Unbounded';
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+.menu-hamburguer a:hover {
+    color: #319cbd;
+}
+
+
+
+
+/* RESPONSIVIDADE  ---------------------------------------------------------------------*/
+
+
+@media (max-width: 1200px){
+
+    header {
+        padding: 0 2rem;
+       
+    }
+
+    #inicio {
+        margin-top: 100px;
+        width: 100%;
+        height: 60vh;
+        background-color: #57c0e0;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    
+    #inicio .foto{
+        height: auto;
+        margin-bottom: -70px;
+        width: 80%;
+    }
+    
+    #inicio .logo{
+        height: auto;
+        width: 70%;
+    }
+
+
+ }
