@@ -1,9 +1,6 @@
+let marginhabilidades = 0; //Margin para movimentar o carrosel de habilidades
+
 let active = false
-
-let header = document.querySelector('header');
-
-
-
 
 document.querySelector('.material-symbols-outlined').addEventListener('click', ()=>{ 
 
@@ -21,81 +18,60 @@ document.querySelector('.material-symbols-outlined').addEventListener('click', (
 
 })
 
-window.sr = ScrollReveal({reset: true});
 
-ScrollReveal().reveal('.inicio-anuncio', {
-    delay: 300,
-    rotate:{
-        x:100,
-        y:0,
-        z:0
+document.querySelector('.habilidades-setaLeft-icone').addEventListener('click', ()=> {
+   
+    if(window.innerWidth >460){
+    marginhabilidades = marginhabilidades + 340;
+    if(marginhabilidades > 0){
+        marginhabilidades = 0;
+    }
+    
+    document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades  + 'px';}
+    else {
+        marginhabilidades = marginhabilidades + (window.innerWidth - 60);
+        if(marginhabilidades > 0){
+            marginhabilidades = 0;
+        }
+        document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades + 'px'; ;
     }
 })
 
-ScrollReveal().reveal('.missao-texto', {
-    delay: 300,
-    rotate:{
-        x:0,
-        y:100,
-        z:0
+document.querySelector('.habilidades-setaRigth-icone').addEventListener('click', () => {
+    if(window.innerWidth > 460){
+    let x = marginhabilidades - 340;
+    if((window.innerWidth - 2640) > x){
+        x = 0;
     }
-})
-ScrollReveal().reveal('.missao-conteudo h1', {
-    delay: 300,
-    rotate:{
-        x:100,
-        y:0,
-        z:0
-    }
-})
-ScrollReveal().reveal('.quemSomos-textos', {
-    delay: 300,
-    rotate:{
-        x:0,
-        y:100,
-        z:0
-    }
-})
-ScrollReveal().reveal('#quemSomos img', {
-    delay: 300,
-    rotate:{
-        x:100,
-        y:0,
-        z:0
+    marginhabilidades = x;
+    document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades + 'px';}
+    else{
+        marginhabilidades = marginhabilidades - (window.innerWidth - 60)  ;
+        let x = -(window.innerWidth * 8) - 10;
+        if(marginhabilidades < x){
+            marginhabilidades = 0;
+        }
+        document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades + 'px';
     }
 })
 
-ScrollReveal().reveal('.servicos-item', {
-    delay: 300,
-    rotate:{
-        x:100,
-        y:0,
-        z:0
+
+window.addEventListener('scroll', () => {
+
+    monitorar();
+
+
+})
+
+
+function monitorar(){
+
+        if(window.scrollY > 100){
+            document.querySelector('header').style.backgroundColor = '#05001c';
+            
+        }else {
+            document.querySelector('header').style.backgroundColor = 'transparent';
+           
+        }
     }
-})
-ScrollReveal().reveal('.membros-container', {
-    delay: 300,
-    rotate:{
-        x:0,
-        y:100,
-        z:0
-    }
-})
-
-const menuItens = document.querySelectorAll('.navegacao a[href^="#"]'); //pega todos a
-
-menuItens.forEach(item => {
-    item.addEventListener('click', scrollToIdOnClick); //coloca um evento de click para cada a
-})
-
-function scrollToIdOnClick(event) { //esse event e passado cada a cada vez que e clicado, addeventlistener
-    event.preventDefault();
-    const element = event.target; // o event vem com varios atributos, o target pega so a tag "a"
-    const id = element.getAttribute('href'); //pega so atributo href dentro do element
-    const to = document.querySelector(id).offsetTop; //esse offsettop pega o top da section
-
-    window.scroll({
-        top: to - 100,
-        behavior: "smooth",
-    })
-}
+    ;
