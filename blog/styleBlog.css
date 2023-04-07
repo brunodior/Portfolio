@@ -295,9 +295,6 @@ input::placeholder {
         margin-top: 100px;
         width: 100%;
         height: 60vh;
-        background-color: #57c0e0;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
         flex-direction: column-reverse;
         overflow: hidden;
     }
@@ -314,4 +311,115 @@ input::placeholder {
     }
 
 
+
+
+
+
+    #post {
+        flex-direction: column-reverse;
+    }
+    .post-left {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        padding: 1rem 1rem;
+        flex-direction: column;
+    
+    
+    }
+    .post-right {
+        width: 100vw;
+        height: 100%;
+        padding: 5rem 1rem;
+    }
+    
+    .post-item {
+        width: 100%;
+        height: auto;
+        background-color: #05001c;
+        border-radius: 2rem;
+        padding: 3rem;
+        margin-top: 50px;
+        
+    }
+    .post-cabecalho {
+        margin-bottom: 20px;
+    }
+    .post-cabecalho h1 {
+        color: #05001c;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+    
+    .post-item h1 {
+        color: #57c0e0;
+        font-size: 2rem;
+        letter-spacing: -2px;
+    }
+    .post-item h3 {
+        color: #fafafa;
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-top: 20px;
+        line-height: 30px;
+    }
+    .post-item h2 {
+        color: #57c0e0;
+        font-size: 1rem;
+        width: auto;
+        margin-top: 30px;
+    }
+    .post-item img {
+        width: 60px;
+    }
+    
+    .post-right .doPost {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #57c0e0;
+        padding: 2rem;
+        border-radius: 2rem;
+    
+    }
+    .doPost textarea,
+    .doPost input {
+        background-color: #319cbd;
+        border-radius: 0.8rem;
+        height: 40px;
+        border: 0;
+        color: #fafafa;
+        margin-top: 20px;
+        padding:1rem;
+    }
+    textarea::placeholder,
+    input::placeholder {
+        color: #fafafa;
+      }
+    
+    .doPost h1 {
+        color: #fafafa;
+        font-size: 2rem;
+        letter-spacing: -2px;
+        margin: auto;
+    }
+    .doPost button {
+        color: #fafafa;
+        background-color: #57c0e0;
+        border: 3px solid #fafafa;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+        width: 50%;
+        padding: 0.5rem 1rem;
+        margin: auto;
+        margin-top: 30px;
+        transition: all ease 0.3s;
+        cursor: pointer;
+        
+    }
+    .doPost button:hover {
+        background-color: #fafafa;
+        color: #319cbd;
+    }
  }
