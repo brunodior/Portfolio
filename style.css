@@ -900,6 +900,107 @@ header .navegacao {
     }
 
 
+/* habilidades  ---------------------------------------------------------------------*/
+
+#habilidade {
+    width: 100%;
+    height: 80vh;
+    padding: 5rem 10px;
+}
+.habilidade-titulo {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.habilidade-titulo h1 {
+    color: #05001c;
+    font-family: 'Unbounded';
+    font-size: 3rem;
+}
+
+
+
+
+
+.container-habilidades {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.habilidades-seta-right,
+.habilidades-seta-left {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.habilidades-seta-right {
+    justify-content: end;
+}
+
+.habilidades-seta-right svg,
+.habilidades-seta-left svg {
+    width: 40px;
+}
+
+.habilidades-seta-right > svg path,
+.habilidades-seta-left > svg path {
+    
+    fill: #05001c;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.habilidades-seta-right svg:hover path,
+.habilidades-seta-left svg:hover path {
+    fill: #f4ebdc;
+}
+
+.habilidades-listarea {
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.habilidades-list {
+    height: 100%;
+    width: 3400px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+
+.habilidades-item {
+    width: calc(100vw - 80px - 1rem);
+    height: 350px;
+    background-color: #05001c;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.habilidades-item img {
+    height: 40%;
+    
+}
+.habilidades-item h1 {
+    color: #57c0e0;
+    font-size: 2rem;
+    margin-top: 25px;
+}
+
 
 
 

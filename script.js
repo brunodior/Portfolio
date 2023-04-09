@@ -27,7 +27,7 @@ document.querySelector('.habilidades-setaLeft-icone').addEventListener('click', 
     
     document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades  + 'px';}
     else {
-        marginhabilidades = marginhabilidades + (window.innerWidth - 60);
+        marginhabilidades = marginhabilidades + (window.innerWidth - 20);
         if(marginhabilidades > 0){
             marginhabilidades = 0;
         }
@@ -44,8 +44,8 @@ document.querySelector('.habilidades-setaRigth-icone').addEventListener('click',
     marginhabilidades = x;
     document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades + 'px';}
     else{
-        marginhabilidades = marginhabilidades - (window.innerWidth - 60)  ;
-        let x = -(window.innerWidth * 8) - 10;
+        marginhabilidades = marginhabilidades - (window.innerWidth - 80)  ;
+        let x = -(window.innerWidth * 4) - 20;
         if(marginhabilidades < x){
             marginhabilidades = 0;
         }
