@@ -87,7 +87,7 @@ header .material-symbols-outlined:hover {
     height: 100%;
     display: flex;
 }
-.post-left {
+.postleft {
     width: 70vw;
     height: 100%;
     display: flex;
@@ -318,7 +318,7 @@ input::placeholder {
     #post {
         flex-direction: column-reverse;
     }
-    .post-left {
+    .postleft {
         width: 100vw;
         height: 100%;
         padding: 1rem 1rem;

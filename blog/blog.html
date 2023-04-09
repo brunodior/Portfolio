@@ -17,6 +17,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAhbhFqGejkp4mDvre-6b6tC45uCzyStCc",
+          authDomain: "processoseletivo-e7368.firebaseapp.com",
+          projectId: "processoseletivo-e7368",
+          storageBucket: "processoseletivo-e7368.appspot.com",
+          messagingSenderId: "589971043944",
+          appId: "1:589971043944:web:c945e05721151d56656ddd",
+          measurementId: "G-QRB1863Z29"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        const postleft = document.querySelector('.postleft');
+
+        document.querySelector('.doPost button').addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const doPostTitle = document.querySelector('.doPost input').value;
+                    const doPostTexto = document.querySelector('.doPost textarea').value;
+                    db.collection("topicos").add({
+            title: doPostTitle,
+            text: doPostTexto  
+            })
+.then((docRef) => {
+   alert("Tópico cadastrado com sucesso!");
+})
+.catch((error) => {
+    console.error("Error adding document: ", error);
+});
+
+posts()
+document.querySelector('.doPost input').value = ' ';
+document.querySelector('.doPost textarea').value = ' ';
+                } )
+
+
+        function posts(){    
+        db.collection('topicos').get().then(snapshot => {
+            const topicosList = snapshot.docs.reduce((acc, doc) => {
+                acc = ``;
+                const postitem = document.createElement("div"); 
+                postitem.classList.add("post-item"); 
+
+                const div = document.createElement("div");
+                const img = document.createElement("img");
+                img.src =  'img/aspas.png';
+
+
+                const title = document.createElement("h1");
+                title.innerHTML =  doc.data().title;
+                div.appendChild(img);
+                div.appendChild(title);
+                postitem.appendChild(div);
+
+                const text = document.createElement("h3");
+                text.innerHTML =  doc.data().text;
+                postitem.appendChild(text);
+                
+                
+               
+               
+
+
+                const data = document.createElement("h2");
+                data.innerHTML =  'Publicado em: 16 de Julho de 2014';
+                postitem.appendChild(data);
+
+
+
+                postleft.appendChild(postitem);  
+                return acc
+            }, '')
+            
+            
+            console.log(topicosList)
+        }).catch(err => {
+            console.log(err.message)
+        })
+
+    }
+    posts();
+
+      </script>
     <header>
         <img src="img/logo.png"/>
         <span class="material-symbols-outlined">
@@ -34,57 +130,17 @@
         <img class="logo" src="img/logo1.png" alt="logo">
     </section>
     <section id="post">
-        <div class="post-left">
+        <div class="postleft" data-js="postleft">
             <div class="post-cabecalho">
                 <h1>Posts</h1>
             </div>
-            <div class="post-item">
-                <div><img src="img/aspas.png"/> <h1>O mundo de hoje e amanhã!</h1></div>
-                
-                <h3>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 
-                    1500s, when an unknown printer took 
-                    
-                    A galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, 
-                    but also the leap </h3>
-
-                <h2>Publicado em: 16 de Julho de 2014</h2>
-            </div>
-            <div class="post-item">
-                <div><img src="img/aspas.png"/> <h1>O mundo de hoje e amanhã!</h1></div>
-                
-                <h3>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 
-                    1500s, when an unknown printer took 
-                    
-                    A galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, 
-                    but also the leap </h3>
-
-                <h2>Publicado em: 16 de Julho de 2014</h2>
-            </div>
-            <div class="post-item">
-                <div><img src="img/aspas.png"/> <h1>O mundo de hoje e amanhã!</h1></div>
-                
-                <h3>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 
-                    1500s, when an unknown printer took 
-                    
-                    A galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, 
-                    but also the leap </h3>
-
-                <h2>Publicado em: 16 de Julho de 2014</h2>
-            </div>
+        
+            
         </div>
         <div class="post-right"> 
             <div class="doPost">
                 <h1>Escreva um post</h1>
-                <input type="text" placeholder="Escreva um titulo..."/>
+                <input class="title-dopost" type="text" placeholder="Escreva um titulo..."/>
                 <textarea placeholder="Escreva o texto..."></textarea>
                 <button>Publicar</button>
             </div>
@@ -100,6 +156,6 @@
         </div>
         <img class="footer-rodape" src="img/rodape.png" alt="rodape"/>
     </section>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

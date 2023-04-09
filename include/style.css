@@ -71,6 +71,18 @@ header ul li a {
 header ul li a:hover {
     color: #edae23;
 }
+header a.fale-conosco{
+    background-color: #edae23;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fafafa;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+header a.fale-conosco:hover {
+     background-color: #b57c02;
+}
 
 header .material-symbols-outlined{
     color: #153962;
