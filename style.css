@@ -979,7 +979,7 @@ header .navegacao {
 }
 
 .habilidades-item {
-    width: calc(100vw - 80px - 1rem);
+    width: calc(100vw - 80px - 20px);
     height: 350px;
     background-color: #05001c;
     margin-left: 0px;
