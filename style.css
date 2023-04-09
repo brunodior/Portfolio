@@ -183,17 +183,18 @@ span.material-symbols-outlined{
 
 #sobreMim {
     width: 100%;
-    height: 70vh;
+    height: 100%;
+
     background-color: #05001c;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10rem;
+    padding: 5rem 10rem;
 }
 
 #sobreMim img {
-    height: 70%;
+    height: 400px;
 }
 
 .sobreMim-texto {
@@ -572,6 +573,42 @@ span.material-symbols-outlined{
     color: #d8d7d7;
 }
 
+/* SERVICOS  ---------------------------------------------------------------------*/
+
+
+#contatos {
+    width: 100%;
+    background-color: #05001c;
+    padding: 3.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.contato-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contato-title h1 {
+    color: #57c0e0;
+    font-size: 3rem;
+    letter-spacing: -2px;
+}
+.contatos-div {
+    width: 50%;
+    background-color: #57c0e0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contatos-div img {
+    height: 60%;
+}
+
+
 @media(max-width: 1200px) {
     #inicio {
         width: 100%;
@@ -627,6 +664,8 @@ span.material-symbols-outlined{
 
         margin-top: 10px;
     }
+
+    
     
 
 
@@ -906,7 +945,7 @@ header .navegacao {
 #habilidade {
     width: 100%;
     height: 80vh;
-    padding: 5rem 10px;
+    padding: 5rem 0px;
 }
 .habilidade-titulo {
 
@@ -980,7 +1019,7 @@ header .navegacao {
 }
 
 .habilidades-item {
-    width: calc(100vw - 80px - 20px);
+    width: calc(100vw - 80px);
     height: 350px;
     background-color: #05001c;
     margin-left: 0px;
@@ -1004,5 +1043,16 @@ header .navegacao {
 
 
 
+.contato-provisorio {
+    flex-direction: column;
+}
+.contatos-div {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 3rem;
+}
+#contatos {
+    padding: 5rem 2rem;
+}
 
 }

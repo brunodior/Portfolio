@@ -20,7 +20,7 @@ document.querySelector('.material-symbols-outlined').addEventListener('click', (
 document.querySelector('.habilidades-setaLeft-icone').addEventListener('click', ()=> {
    
     if(window.innerWidth >460){
-    marginhabilidades = marginhabilidades + 340;
+    marginhabilidades = marginhabilidades + 390;
     if(marginhabilidades > 0){
         marginhabilidades = 0;
     }
@@ -37,15 +37,15 @@ document.querySelector('.habilidades-setaLeft-icone').addEventListener('click', 
 
 document.querySelector('.habilidades-setaRigth-icone').addEventListener('click', () => {
     if(window.innerWidth > 460){
-    let x = marginhabilidades - 340;
-    if((window.innerWidth - 2640) > x){
+    let x = marginhabilidades - 390;
+    if((window.innerWidth - 2730) > x){
         x = 0;
     }
     marginhabilidades = x;
     document.querySelector('.habilidades-list').style.marginLeft = marginhabilidades + 'px';}
     else{
-        marginhabilidades = marginhabilidades - (window.innerWidth - 80)  ;
-        let x = -(window.innerWidth * 4) - 20;
+        marginhabilidades = marginhabilidades - (window.innerWidth - 65)  ;
+        let x = -(window.innerWidth * 5);
         if(marginhabilidades < x){
             marginhabilidades = 0;
         }
@@ -138,6 +138,14 @@ ScrollReveal().reveal('.hobbies-item', {
 })
 
 ScrollReveal().reveal('.portifolio-item', {
+    delay: 300,
+    rotate:{
+        x:100,
+        y:0,
+        z:0
+    }
+})
+ScrollReveal().reveal('.contatos-div', {
     delay: 300,
     rotate:{
         x:100,
