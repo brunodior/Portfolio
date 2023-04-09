@@ -17,8 +17,6 @@ document.querySelector('.material-symbols-outlined').addEventListener('click', (
 
 
 })
-
-
 document.querySelector('.habilidades-setaLeft-icone').addEventListener('click', ()=> {
    
     if(window.innerWidth >460){

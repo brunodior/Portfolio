@@ -570,3 +570,293 @@ span.material-symbols-outlined{
     font-weight: 600;
     color: #d8d7d7;
 }
+
+@media(max-width: 1200px) {
+    #inicio {
+        width: 100%;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        padding: 0rem 2rem;
+        padding-top: 100px;
+        flex-direction: column;
+    }
+    .inicio-informacoes {
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    
+    }
+    .inicio-informacoes h1 {
+
+        font-size: 2.7rem;
+        margin-top: -10px;
+        letter-spacing: -2px;
+    
+    }
+    .inicio-informacoes h2 {
+        color: #fafafa;
+        font-size: 2rem;
+        letter-spacing: -2px;
+    }
+    .inicio-informacoes h3 {
+        color: #fafafa;
+        font-weight: 300;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .inicio-informacoes a {
+        color: #fafafa;
+        margin-top: 20px;
+        font-size: 1rem;
+        border: 2px solid #fafafa;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 0.8rem;
+        border-radius: 2rem;
+        transition: all ease 0.3s;
+        cursor: pointer;
+    }
+    .inicio-informacoes a:hover {
+        background-color: #fafafa;
+        color: #0a012e;
+    }
+    #inicio img {
+        height: 45vh;
+
+        margin-top: 10px;
+    }
+    
+
+
+    /* HEADER  ---------------------------------------------------------------------*/
+header {
+    width: 100vw;
+    height: 100px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+
+header .navegacao {
+    display: none;
+}
+
+
+
+/* INCLUDE  ---------------------------------------------------------------------*/
+
+
+#include {
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column-reverse;
+}
+#include iframe {
+    border-radius: 2rem;
+    width: 80%;
+}
+
+#include h1 {
+
+    font-size: 3rem;
+    font-family: 'Unbounded';
+    line-height: 45px;
+    margin-left: 0;
+    padding: 3rem 2rem;
+
+}
+
+/* SOBRE MIM  ---------------------------------------------------------------------*/
+
+#sobreMim {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+}
+
+#sobreMim img {
+    height: auto;
+    width: 80%;
+}
+
+.sobreMim-texto {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    max-width: 700px;
+}
+.sobreMim-texto h1 {
+    font-family: 'Unbounded';
+    font-size: 2rem;
+}
+.sobreMim-texto h3 {
+    margin-top: 10px;
+    line-height: 30px;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+/* HOBBIES  ---------------------------------------------------------------------*/
+
+#hobbies {
+    width: 100vw;
+    height: 100%;
+    background-color: #05001c;
+    background-image: url('img/fundo-hobbies.png');
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 100px;
+    padding: 2rem 2rem;
+
+}
+
+.hobbies-textos {
+
+    width: 100%;
+    padding: 3.5rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobbies-textos h1 {
+    color: #57c0e0;
+    font-size: 3rem;
+    letter-spacing: -2px;
+}
+.hobbies-container {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.hobbies-item {
+    width: 100%;
+    height: 350px;
+    border: solid 2px #d8d7d7;
+    border-radius: 3rem;
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hobbies-item img {
+    height: 100px;
+}
+
+
+/* PORTIFOLIO  ---------------------------------------------------------------------*/
+
+#portifolio {
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    background-color: #05001c;
+}
+.portifolio-titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portifolio-titulo h1 {
+    color: #57c0e0;
+    font-size: 3rem;
+    font-family: 'Unbounded';
+}
+.portifolio-container {
+    width: 100%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 40px;
+}
+
+.portifolio-item {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #57c0e0;
+    border-radius: 2rem;
+    padding: 1rem;
+    scale: 0.9;
+    transition: all ease 0.3s;
+}
+.portifolio-item:hover {
+    scale: 1;
+}
+.portifolio-item img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.portifolio-item h1 {
+    color: #57c0e0;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.portifolio-item h3 {
+    color: #f4ebdc;
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.portifolioLink {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.portifolioLink .acessarProjeto {
+    background-color: #57c0e0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #05001c;
+    border-radius: 1rem;
+    font-weight: 300;
+    padding: 0.7rem 1.6rem;
+    transition: all ease 0.3s;
+}
+.portifolioLink .acessarProjeto:hover {
+    background-color: #f4ebdc;
+}
+
+
+
+
+
+
+
+
+}
