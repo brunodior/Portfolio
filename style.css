@@ -5,7 +5,7 @@
     font-family: "Montserrat", sans-serif;
 }
 body {
-    background-color: #57c0e0;
+    background-color: #319cbd;
 }
 
 body::-webkit-scrollbar {
@@ -185,7 +185,7 @@ span.material-symbols-outlined{
     width: 100%;
     height: 100%;
 
-    background-color: #05001c;
+    background-color: #319cbd;
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -206,7 +206,7 @@ span.material-symbols-outlined{
     max-width: 700px;
 }
 .sobreMim-texto h1 {
-    color: #57c0e0;
+    color: #0a012e;
     font-family: 'Unbounded';
     font-size: 3rem;
 }
@@ -514,7 +514,7 @@ span.material-symbols-outlined{
     background-image: url('img/fundo-hobbies.png');
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
+    margin-top: 0;
     padding: 3.5rem 6rem;
 
 }
