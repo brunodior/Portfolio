@@ -1,0 +1,33 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+@import "./variables";
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'material-icons/iconfont/material-icons.css';
+
+* { 
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.unbounded {
+  font-family: "Unbounded", sans-serif !important;
+}
+
+h1 {
+  letter-spacing: -3px;
+}
+
+h2 {
+  letter-spacing: -3px;
+}
+
+
+.bold {
+  font-weight: bold;
+  color: #16479d;
+}
