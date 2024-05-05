@@ -1,4 +1,97 @@
+
+
+
+
 function Portfolio(){
+
+    const portfolio = [
+        {   
+            name: 'Miaudota',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/miaudota.png?alt=media&token=8dee9e36-8eac-4364-9788-c9bcd798d169',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'DevMemory',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/jogodamemoria.png?alt=media&token=cddf60e6-e902-49f3-a8e7-85ea10b159d1',
+            site: 'https://imc-calculadora-nine.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Calculadora de IMC',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/calculadoraIMC.png?alt=media&token=b8e78cb4-5ac3-41af-a9f8-c6681c467724',
+            site: 'https://imc-calculadora-nine.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Clima agora',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/climaagora.png?alt=media&token=199b5954-1d59-477b-b692-770cb3e05948',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Netflix',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/netflix.png?alt=media&token=e3c12088-24cc-4795-88ef-808abeaaa4dd',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Arrasta e solta',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/arrastaesolta.png?alt=media&token=10fb3ce4-2a3a-4cdd-ac1b-4e4c9ebeae4c',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Clone OLX',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/miaudota.png?alt=media&token=8dee9e36-8eac-4364-9788-c9bcd798d169',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'To-do list',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/todo.png?alt=media&token=be333b5c-0f9a-4de4-a202-83b615b09b10',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Loucos por pastel',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/loucosporpaste%3B.png?alt=media&token=25a5b9e1-89b5-48e9-8c41-aeeef89c0686',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'KnowMe',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/knowme.png?alt=media&token=71ee530f-b27f-491a-95f1-44f417fca3ac',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Bateria',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/bateria.png?alt=media&token=4841bb45-c7c3-4c09-a9cf-d4cad6877afe',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+        {   
+            name: 'Jogo da velha',
+            text: 'Sistema de adoção de pets, feito com React JS, Bootstrap, Node js e MongoDB.',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/jogodavellha.png?alt=media&token=b4ad2819-5917-43a4-846a-e09f234ae0ef',
+            site: 'https://miaudota.vercel.app/',
+            github: 'https://github.com/brunodior/miaudota-frontend'
+        },
+    
+    ]
+
     return (
         <section className="p-5 bg-primary">
             
@@ -9,12 +102,21 @@ function Portfolio(){
                 </div>
 
 
-                <div className="row mt-3">
-                    <div className="col-4">
-                        <div className="border border-3 border-secondary rounded-4 p-3">
-                            
+                <div className="row g-4 mt-4">
+                {portfolio.map((data, index) => (
+                    <div className="col-4 ">
+                        <div className="border border-2 border-secondary rounded-5 p-4">
+                            <img className="w-100 rounded-4" style={{height: '150px', objectFit: 'cover'}} alt="logo" src={data.url}/>
+                            <h4 className="text-secondary fw-bold mt-3 montserrat">{data.name}</h4>
+                            <h6 className="fw-light text-light montserrat">{data.text}</h6>
+                            <div className="d-flex w-100 mt-3">
+                                <a href={data.site} className="btn btn-light text-decoration-none p-2 w-75 h6 rounded-4 m-0 me-2 d-flex align-items-center justify-content-center">Acessar projeto</a>
+                                <a href={data.github} className="btn btn-outline-light light text-decoration-none p-1 w-25 h6 rounded-4 m-0"><i class="bi bi-github fs-4"></i></a>
+                            </div>
                         </div>
                     </div>
+                ))}
+                    
                 </div>
         </section>
     )

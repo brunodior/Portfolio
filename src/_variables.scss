@@ -21,12 +21,12 @@ $spacers: (
 );
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$h1-font-size:                $font-size-base * 6;
+$h1-font-size:                $font-size-base * 5;
 $h2-font-size:                $font-size-base * 3.5;
 $h3-font-size:                $font-size-base * 2.5;
 $h4-font-size:                $font-size-base * 1.5;
 $h5-font-size:                $font-size-base * 1.25;
-$h6-font-size:                $font-size-base;
+$h6-font-size:                $font-size-base * 0.9;
 
 
 .nav-link {
