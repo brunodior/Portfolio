@@ -1,5 +1,5 @@
 import logo from '../assets/logotipoBD.png'
-import {  IonMenuButton, } from '@ionic/react';
+// import {  IonMenuButton, } from '@ionic/react';
 
 function NavBar(){
 return(

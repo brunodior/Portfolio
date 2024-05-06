@@ -6,7 +6,7 @@ import Portfolio from './sections/Portfolio';
 import Footer from './sections/Footer';
 import Hability from './sections/Hability';
 import Contact from './sections/Contact';
-import {  IonContent, IonMenu,  } from '@ionic/react';
+// import {  IonContent, IonMenu,  } from '@ionic/react';
 import Hobbies from './sections/Hobbies';
 
 function App() {
