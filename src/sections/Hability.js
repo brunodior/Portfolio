@@ -79,7 +79,7 @@ function Hability() {
     ]
 
     return (
-        <section className="p-md-5 px-3 py-4  bg-primary">
+        <section className="p-md-5 px-3 py-4  bg-primary" id='hability'>
             <div className="position-relative d-flex justify-content-center align-items-center">
                     <h3 className="m-0 fw-bold text-white  position-absolute border-3 border-bottom border-secondary unbounded">Habilidades</h3>
 
