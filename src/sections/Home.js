@@ -15,8 +15,8 @@ function Home() {
                 </div>
                 <div className='col-md-6'>
                     <div className='w-100 h-100 position-relative d-flex justify-content-center align-items-end'>
-                        <img src={background} alt='background' className={styles.imgLoop} style={{zIndex: 100}} />
-                        <img src={perfil} alt='perfil' className='w-100' style={{zIndex: 100}}/>
+                        <img src={background} alt='background' className={styles.imgLoop} style={{zIndex: 10}} />
+                        <img src={perfil} alt='perfil' className='w-100' style={{zIndex: 10}}/>
 
                     </div>
                 </div>

@@ -1,8 +1,9 @@
 import logo from '../assets/logotipoBD.png'
+import {  IonMenuButton, } from '@ionic/react';
 
 function NavBar(){
 return(
-   <section className="position-fixed top-0 end-0 start-0 px-3 px-md-5 py-3 d-flex justify-content-between bg-primary" style={{zIndex: '10000'}}>
+   <section className="position-fixed top-0 end-0 start-0 px-3 px-md-5 py-3 d-flex justify-content-between bg-primary" style={{zIndex: '100', minHeight: '96px'}}>
         <img src={logo} alt='logo' style={{height: '40px'}}/>
         <ul class="nav nav-underline d-none d-md-flex">
                 <li class="nav-item">
@@ -30,6 +31,13 @@ return(
                 </li>
                
         </ul>
+
+
+           
+            <div id="main-content" color="white" className="d-flex d-md-none text-white">
+                <IonMenuButton></IonMenuButton>
+            </div>
+
    </section> 
 )
 }
