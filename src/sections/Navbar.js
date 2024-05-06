@@ -2,9 +2,9 @@ import logo from '../assets/logotipoBD.png'
 
 function NavBar(){
 return(
-   <div className="px-5 py-4 d-flex justify-content-between bg-primary">
+   <section className="position-fixed top-0 end-0 start-0 px-3 px-md-5 py-3 d-flex justify-content-between bg-primary" style={{zIndex: '10000'}}>
         <img src={logo} alt='logo' style={{height: '40px'}}/>
-        <ul class="nav nav-underline">
+        <ul class="nav nav-underline d-none d-md-flex">
                 <li class="nav-item">
                     <a class="nav-link h6 mx-2 mt-1 fw-semibold unbounded " aria-current="page" href="#home">Inicio</a>
                 </li>
@@ -30,7 +30,7 @@ return(
                 </li>
                
         </ul>
-   </div> 
+   </section> 
 )
 }
 export default NavBar

@@ -3,6 +3,7 @@ import Home from './sections/Home';
 import NavBar from './sections/Navbar';
 import AboutMe from './sections/AboutMe';
 import Portfolio from './sections/Portfolio';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Home/>
         <AboutMe/>
         <Portfolio/>
+        <Footer/>
     </div>
   );
 }

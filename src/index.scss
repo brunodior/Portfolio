@@ -27,7 +27,16 @@ h2 {
 }
 
 
-.bold {
-  font-weight: bold;
-  color: #16479d;
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #05001c;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2b499e;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #2b499e;  /* creates padding around scroll thumb */
 }
