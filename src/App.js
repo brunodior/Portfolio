@@ -6,13 +6,14 @@ import Portfolio from './sections/Portfolio';
 import Footer from './sections/Footer';
 import Hability from './sections/Hability';
 import Contact from './sections/Contact';
-import {  IonContent, IonMenu,  } from '@ionic/react';
+// import {  IonContent, IonMenu,  } from '@ionic/react';
+import Hobbies from './sections/Hobbies';
 
 function App() {
   return (
     
     <div className='bg-secondary w-100 overflow-hidden'>
-          <IonMenu contentId="main-content">
+          {/* <IonMenu contentId="main-content">
                   <IonContent className="ion-padding">
 
                   <ul class="nav nav-underline d-block">
@@ -44,10 +45,11 @@ function App() {
 
                   
                   </IonContent>
-          </IonMenu>
+          </IonMenu> */}
         <NavBar/>
         <Home/>
         <AboutMe/>
+        <Hobbies/>
         <Hability/>
         <Portfolio/>
         <Contact/>

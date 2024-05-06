@@ -1,5 +1,5 @@
 import logo from '../assets/logotipoBD.png'
-import {  IonMenuButton, } from '@ionic/react';
+// import {  IonMenuButton, } from '@ionic/react';
 
 function NavBar(){
 return(
@@ -34,9 +34,9 @@ return(
 
 
            
-            <div id="main-content" color="white" className="d-flex d-md-none text-white">
+            {/* <div id="main-content" color="white" className="d-flex d-md-none text-white">
                 <IonMenuButton></IonMenuButton>
-            </div>
+            </div> */}
 
    </section> 
 )

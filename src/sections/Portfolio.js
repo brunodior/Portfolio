@@ -112,8 +112,8 @@ function Portfolio(){
                             </div>
                            
                             <div className="d-flex w-100 mt-3">
-                                <a href={data.site} target='_blank' className="btn btn-light text-decoration-none p-2 w-75 h6 rounded-4 m-0 me-2 d-flex align-items-center justify-content-center">Acessar projeto</a>
-                                <a href={data.github} target='_blank' className="btn btn-outline-light light text-decoration-none p-1 w-25 h6 rounded-4 m-0"><i class="bi bi-github fs-4"></i></a>
+                                <a href={data.site} rel="noopener noreferrer" target='_blank' className="btn btn-light text-decoration-none p-2 w-75 h6 rounded-4 m-0 me-2 d-flex align-items-center justify-content-center">Acessar projeto</a>
+                                <a href={data.github} rel="noopener noreferrer" target='_blank' className="btn btn-outline-light light text-decoration-none p-1 w-25 h6 rounded-4 m-0"><i class="bi bi-github fs-4"></i></a>
                             </div>
                         </div>
                     </div>
