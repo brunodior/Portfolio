@@ -34,9 +34,9 @@ return(
 
 
            
-            <div id="main-content" color="white" className="d-flex d-md-none text-white">
+            {/* <div id="main-content" color="white" className="d-flex d-md-none text-white">
                 <IonMenuButton></IonMenuButton>
-            </div>
+            </div> */}
 
    </section> 
 )

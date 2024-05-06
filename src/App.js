@@ -12,7 +12,7 @@ function App() {
   return (
     
     <div className='bg-secondary w-100 overflow-hidden'>
-          <IonMenu contentId="main-content">
+          {/* <IonMenu contentId="main-content">
                   <IonContent className="ion-padding">
 
                   <ul class="nav nav-underline d-block">
@@ -44,7 +44,7 @@ function App() {
 
                   
                   </IonContent>
-          </IonMenu>
+          </IonMenu> */}
         <NavBar/>
         <Home/>
         <AboutMe/>
