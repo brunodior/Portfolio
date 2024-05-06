@@ -16,7 +16,7 @@
 
 .scale {
     width: 100%; /*o tamanho vai 100% de 150 */
-    transform: scale(0.5);
+    transform: scale(0.9);
     transition: all ease 0.2s;
 }
 .scale:hover {
