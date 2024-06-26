@@ -9,7 +9,7 @@ function Home() {
                     <div className='h-100 w-100 d-flex flex-column justify-content-center text-center text-md-start'>
                         <h2 className='text-white fw-normal m-0 lh-1'>Olá, me chamo</h2>
                         <h1 className='fw-bold lh-1 text-secondary'>Bruno Dior!</h1>
-                        <h6 className='fw-bold text-white' style={{letterSpacing: '10px'}}>DESENVOLVEDOR FULL-STACK</h6>
+                        <h6 className='fw-bold text-white' style={{letterSpacing: '5px'}}>UI/UX DESIGN E DESENVOLVEDOR FRONT-END</h6>
                         <a href='https://api.whatsapp.com/send?phone=5584988716812&text=Ol%C3%A1,%20Bruno%20Dior!' className='btn btn-outline-secondary p-2 w-100 fw-semibold rounded-5 fs-4 mt-3'>Entre em contato</a>
                     </div>
                 </div>

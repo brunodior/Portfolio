@@ -3,6 +3,10 @@ function Hability() {
 
     const icons = [
         {
+            icon: 'devicon-figma-plain',
+            name: 'Figma'
+        },
+        {
             icon: 'devicon-react-original',
             name: 'React'
         },
@@ -66,10 +70,6 @@ function Hability() {
         {
             icon: 'devicon-docker-plain',
             name: 'Docker'
-        },
-        {
-            icon: 'devicon-figma-plain',
-            name: 'Figma'
         },
         {
             icon: 'devicon-git-plain',

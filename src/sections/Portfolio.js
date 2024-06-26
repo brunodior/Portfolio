@@ -42,6 +42,13 @@ function Portfolio(){
             github: 'https://github.com/brunodior/miaudota-frontend'
         },
         {   
+            name: 'PS multimarcas',
+            text: 'E-Commerce básico com integração com whatsapp',
+            url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/psmultimarcas.png?alt=media&token=28c0c4d1-d6c5-4813-ace6-7cb37bd67aab',
+            site: 'https://psmultimarcas.com/',
+            github: 'https://github.com/brunodior/KnowMe'
+        },
+        {   
             name: 'KnowMe',
             text: 'Joguinho de perguntas sobre o tanto que você me conhece.',
             url: 'https://firebasestorage.googleapis.com/v0/b/portifolio-4a7bd.appspot.com/o/knowme.png?alt=media&token=71ee530f-b27f-491a-95f1-44f417fca3ac',

@@ -8,7 +8,25 @@ function AboutMe() {
             </div>
                 <div className='col-md-6 d-flex justify-content-center flex-column'>
                     <h2 className='text-white fw-normal'>Sobre mim</h2>
-                    <p className='text-primary fw-bold m-0'>Eu comecei no mundo da programação em 2019 quando entrei na faculdade. Atualmente sou formado em Ciências e Tecnologia pela UFRN, e também curso Engenharia da Computação pela mesma Universidade, além disso, fiz alguns cursos online que aprimoraram meu conhecimento. <br/> <br/> Me considero uma pessoa bastante comunicativa, divertida e empática. Gosto de manter uma boa relação com pessoas, principalmente em ambiente de trabalho. <br/> <br/> Sou bastante empenhado e focado no que me empenho em fazer, tenho uma grande fome de aprender, principalmente no mundo da programação, estou sempre buscando me aprimorar.</p>
+                    <p className='text-primary fw-bold m-0'>Me chamo Bruno, tenho 23 anos e sou estudante de Engenharia de Computação pela UFRN. 
+                                                            Minha trajetória profissional está centrada no 
+                                                            desenvolvimento de projetos que visam aprimorar a 
+                                                            experiência dos usuários, através de soluções
+                                                            responsivas, acessíveis e criativas. 
+                                                            <br></br><br></br>
+                                                            Tenho um forte 
+                                                            compromisso em me aprofundar nas tarefas que 
+                                                            assumo e estou constantemente em busca de novos 
+                                                            conhecimentos em cada desafio que enfrento. Tenho 
+                                                            ampla experiência como Design Gráfico, no qual já trabalho 
+                                                            por 9 anos com diversas empresas. A 1 ano descobri o
+                                                            mundo de UI/UX design no qual venho me aprofundando. 
+                                                            Além disso, sou Desenvolvedor Front-end com amplo 
+                                                            domínio.
+                                                            <br></br><br></br>
+                                                            Me considero uma pessoa bastante comunicativa, divertida e 
+                                                            empática. Gosto de manter uma boa relação com pessoas, 
+                                                            principalmente em ambiente de trabalho.</p>
                 </div>
         </section>
     )
